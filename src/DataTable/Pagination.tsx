@@ -9,8 +9,8 @@ import { PaginationOptions } from './types';
 import { defaultProps } from './defaultProps';
 
 const defaultComponentOptions = {
-	rowsPerPageText: 'Rows per page:',
-	rangeSeparatorText: 'of',
+	rowsPerPageText: 'Linhas por página:',
+	rangeSeparatorText: 'de',
 	noRowsPerPage: false,
 	selectAllRowsItem: false,
 	selectAllRowsItemText: 'All',
@@ -151,7 +151,7 @@ function Pagination({
 				<Button
 					id="pagination-first-page"
 					type="button"
-					aria-label="First Page"
+					aria-label="Primeira página"
 					aria-disabled={disabledLesser}
 					onClick={handleFirst}
 					disabled={disabledLesser}
@@ -163,7 +163,7 @@ function Pagination({
 				<Button
 					id="pagination-previous-page"
 					type="button"
-					aria-label="Previous Page"
+					aria-label="Página anterior"
 					aria-disabled={disabledLesser}
 					onClick={handlePrevious}
 					disabled={disabledLesser}
@@ -177,7 +177,7 @@ function Pagination({
 				<Button
 					id="pagination-next-page"
 					type="button"
-					aria-label="Next Page"
+					aria-label="Próxima página"
 					aria-disabled={disabledGreater}
 					onClick={handleNext}
 					disabled={disabledGreater}
@@ -189,7 +189,7 @@ function Pagination({
 				<Button
 					id="pagination-last-page"
 					type="button"
-					aria-label="Last Page"
+					aria-label="Última página"
 					aria-disabled={disabledGreater}
 					onClick={handleLast}
 					disabled={disabledGreater}
